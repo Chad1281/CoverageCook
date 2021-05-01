@@ -9,9 +9,11 @@ export default function Header() {
         <div id="headerContainer">
             <div id="header">
                 <img src={ Firefly } alt="Firefly Insurance Logo" />
-                <h2>A bright idea:</h2>
-                <p>We'll shop your home and auto insurance for you.</p>
-                <p>One agent. Lots of quotes. No hassle. Guaranteed.</p>
+                <div id="headerWrapper">
+                    <h2>A bright idea:</h2>
+                    <p>We'll shop your home and auto insurance for you.</p>
+                    <p>One agent. Lots of quotes. No hassle. Guaranteed.</p>
+                </div>
                 <QuoteBtn />
             </div>
             
