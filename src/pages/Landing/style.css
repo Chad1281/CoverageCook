@@ -1,0 +1,33 @@
+#landingContainer {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #181f25;
+}
+
+#carrierImgsContainer {
+    overflow: hidden;
+    background-color: #7ac4ea;
+    margin: 20vh 0 15px 0;
+}
+
+#carrierImgs {
+    display: flex;
+    width: 200px;
+    max-height: 80px;
+    position: relative;
+    padding: 5px 10px 10px 0;
+    left: 100vw;
+}
+
+#carrierImgs img {
+    margin: 5px 15px;
+    width: auto;
+    height: 70px;
+    position: relative;
+    animation: mymove 50s 1s linear infinite;
+}
+
+@keyframes mymove {
+    from {right: 0px;}
+    to {right: 7700px;}
+}
