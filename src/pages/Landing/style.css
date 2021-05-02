@@ -36,13 +36,14 @@ body {
 
 @keyframes mymove {    
     from {right: 0px;}
-    to {right: 6200px}
+    to {right: 5800px}
 }
 
 #landingCardsWrapper {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     width: 100vw;
     background-color: #626267;
@@ -61,15 +62,71 @@ body {
 .card h2 {
     margin: 20px 0 0 0;
     width: 320px;
+    max-width: 80vw;
     font-size: 2rem;
 }
 
 .card p {
-    width: 380px;
+    width: 360px;
+    max-width: 80vw;
     font-size: 1.3rem;
+    font-weight: 400;
 }
 
 #landingCardsWrapper img {
     width: auto;
     height: 150px;
+}
+
+#snapshotContainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: #7ac4ea;
+}
+
+#snapshotContainer h2 {
+    margin: 100px 0 30px 0;
+    width: 400px;
+    max-width: 80vw;
+    font-size: 3rem;
+    color: #181f25;
+    text-align: center;
+}
+
+#snapshotContainer p {
+    margin: 10px;
+    width: 460px;
+    max-width: 80vw;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #181f25;
+    text-align: center;
+}
+
+#snapshotContainer img {
+    margin: 50px 0 50px 0;
+    width: 460px;
+    max-width: 80vw;
+    height: auto;
+}
+
+#snapshot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#snapshot button {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 25px 0;
+    padding: 2px 15px 2px 15px;
+    color: #f4f4f4;
+    background-color: #626267;
+    border-radius: 10px;
+    border-color: #181f25;
 }

@@ -4,6 +4,7 @@ import LandingCards from "../../assets/data/landingCards";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Navbar from "../../components/Navbar";
+import Snapshot from "../../assets/images/landingCards/snapshot.png";
 import "./style.css";
 
 const LandingPage = () => {
@@ -35,8 +36,18 @@ const LandingPage = () => {
                     )
                 })}    
             </div>
-            <div className="spacer" />
-                        
+            {/* <div className="spacer" /> */}
+            <div id="snapshotContainer">
+                <div id="snapshot">
+                    <h2>Stop Wondering</h2>
+                    <p>​ARE YOU SURE YOU'RE NOT OVERPAYING?</p>
+                    <p>​WE CAN QUOTE YOU WITH A BUNCH OF COMPANIES ALL AT ONE TIME.</p>
+                    <p>HERE IS A SCREENSHOT OF ONE OF OUR QUOTES. IMAGINE WHAT WE COULD DO FOR YOU!​</p>
+                    <button>Try It For Yourself</button>
+                </div>
+                <img src= {Snapshot} alt="list of companies with quotes from each" />
+            </div>
+            <div className="spacer" />                        
             <Footer />
         </div>
     )
