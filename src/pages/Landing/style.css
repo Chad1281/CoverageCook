@@ -1,3 +1,11 @@
+body {
+    overflow-x: hidden;
+}
+
+.spacer {
+    height: 100px;
+}
+
 #landingContainer {
     margin: 0;
     min-height: 100vh;
@@ -5,29 +13,30 @@
 }
 
 #carrierImgsContainer {
+    position: fixed;
+    bottom: 0;
     overflow: hidden;
     background-color: #7ac4ea;
-    margin: 20vh 0 15px 0;
+    margin: 3vh 0 0 0;
 }
 
 #carrierImgs {
     display: flex;
-    width: 200px;
-    max-height: 80px;
     position: relative;
+    max-height: 42px;
     padding: 5px 10px 10px 0;
     left: 100vw;
 }
 
 #carrierImgs img {
-    margin: 5px 15px;
+    margin: 1px 15px;
     width: auto;
-    height: 70px;
+    height: 40px;
     position: relative;
     animation: mymove 50s 1s linear infinite;
 }
 
-@keyframes mymove {
+@keyframes mymove {    
     from {right: 0px;}
-    to {right: 7700px;}
+    to {right: 6200px}
 }

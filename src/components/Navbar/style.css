@@ -2,14 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
     width: 100vw;
     min-height: 50px;
     margin: 0;
-    /* padding: 5px 0 5px 25px; */
     background-color: #f4f4f4;
-    /* border-top: 5px solid #7ac4ea; */
-    /* border-bottom: 5px solid #7ac4ea; */
-    z-index: 5;
 }
 
 #navContainer a {
@@ -19,9 +17,6 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: #181f25;
-    /* border: 2px solid rgb(219, 1, 121); */
-    /* border-radius: 5px; */
-    /* background-color: rgb(255, 2, 107); */
 }
 
 @media screen and (max-width: 1400px) {
