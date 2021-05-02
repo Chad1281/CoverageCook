@@ -7,7 +7,7 @@ import QuoteBtn from "../QuoteBtn";
 export default function Header() {
     return(
         <div id="headerContainer">
-            <div id="header">
+            <div id="fireflyHeader">
                 <img src={ Firefly } alt="Firefly Insurance Logo" />
                 <div id="headerWrapper">
                     <h2>A bright idea:</h2>

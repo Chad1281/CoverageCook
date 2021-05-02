@@ -1,6 +1,23 @@
 body {
     overflow-x: hidden;
+    overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+} 
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #626267; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+background: #181f25; 
+}  
 
 .spacer {
     height: 100px;
@@ -31,12 +48,30 @@ body {
     width: auto;
     height: 40px;
     position: relative;
-    animation: mymove 50s 1s linear infinite;
+    animation: move 48s 1s linear infinite;
 }
 
-@keyframes mymove {    
+@keyframes move {    
     from {right: 0px;}
     to {right: 5800px}
+}
+
+#landingCardsContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #626267;
+}
+
+#landingCardsContainer button {
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: auto;
+    margin: 0 auto 50px auto;
+    padding: 2px 15px 2px 15px;
+    color: #181f25;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border-color: #626267;
 }
 
 #landingCardsWrapper {
@@ -46,7 +81,6 @@ body {
     flex-wrap: wrap;
     margin: 0;
     width: 100vw;
-    background-color: #626267;
 }
 
 .card {
