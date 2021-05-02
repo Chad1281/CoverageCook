@@ -13,11 +13,9 @@ body {
 }
 
 #carrierImgsContainer {
-    position: fixed;
-    bottom: 0;
     overflow: hidden;
     background-color: #7ac4ea;
-    margin: 3vh 0 0 0;
+    margin: 10vh 0 0 0;
 }
 
 #carrierImgs {

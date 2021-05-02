@@ -1,0 +1,21 @@
+/* ul {
+    margin: 2px 0 2px 10px;
+    padding: 10px;
+    width: 100vw;
+    height: auto;
+}  */
+
+#footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 250px;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
