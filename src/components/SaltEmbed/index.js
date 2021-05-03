@@ -1,16 +1,7 @@
-import { useEffect } from "react";
+import React from "react";
 
 export default function SaltEmbed() {
-
-    const url = "https://insuranceform.app/chadcookfireflyagency/embed.js";
-
-    useEffect(() => {        
-        const script = document.createElement('script');
-        script.src = url;
-        script.async = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-          }
-        }, [url]);
-  }
+  return(
+    <iframe src="https://insuranceform.app/s/chadcookfireflyagency" width="596px" height="810px" style={{borderRadius: "15px", maxHeight: "90vh", maxWidth: "80vw"}} title="Quote Form" />
+  )
+}

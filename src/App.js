@@ -2,7 +2,7 @@ import React from "react";
 import { Router, Switch } from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
-import LandingPage from "./pages/Landing";
+import Home from "./pages/Home";
 // import Header from "./components/Header";
 // import Navbar from "./components/Navbar";
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       {/* <Switch> */}
-        <LandingPage />
+        <Home />
       {/* </Switch> */}
     {/* <div className="App">
       <header className="App-header">

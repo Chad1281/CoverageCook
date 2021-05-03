@@ -16,7 +16,7 @@ export default function QuoteCard({handleClick, children}) {
                     </header>
                 </div>                
                 <div className="modalCardBody">
-                    <section>{ children }</section>  
+                    <section className="modalSection">{ children }</section>  
                 </div>
                               
             </div>            

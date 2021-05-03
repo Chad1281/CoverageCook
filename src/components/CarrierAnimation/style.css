@@ -1,0 +1,26 @@
+#carrierLogos {
+    overflow: hidden;
+    background-color: #7ac4ea;
+    margin: 0;
+}
+
+#carrierLogosContainer {
+    display: flex;
+    position: relative;
+    max-height: 42px;
+    padding: 5px 10px 10px 0;
+    left: 100vw;
+}
+
+#carrierLogosContainer img {
+    margin: 1px 15px;
+    width: auto;
+    height: 40px;
+    position: relative;
+    animation: move 48s 1s linear infinite;
+}
+
+@keyframes move {    
+    from {right: 0px;}
+    to {right: 5800px}
+}
