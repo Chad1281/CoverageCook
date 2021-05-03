@@ -1,11 +1,11 @@
 import React from "react";
-import ScriptTag from "react-script-tag";
-import CarrierImgLinks from "../../assets/data/carrierImgLinks";
+import CarrierLogos from "../../assets/data/carrierLogos";
 import LandingCards from "../../assets/data/landingCards";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ModalCard from "../../components/ModalCard";
 import Navbar from "../../components/Navbar";
+import Card from "../../components/Card";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
 import "./style.css";
 
@@ -16,15 +16,12 @@ const LandingPage = () => {
     return(
         <div id="landingContainer">
             <ModalCard>
-                <ScriptTag type="text/javascript" src="https://insuranceform.app/chadcookfireflyagency/embed.js"></ScriptTag>
-                <ScriptTag type="text/javascript" id="salt-embed">
-                new SaltEmbed();
-                </ScriptTag>
+                <iframe src="https://insuranceform.app/s/chadcookfireflyagency" width="596px" height="810px" style={{borderRadius: "15px", maxHeight: "90vh", maxWidth: "80vw"}} title="Quote Form" />
             </ModalCard>
             <Header />            
             <div id="carrierImgsContainer">
                 <div id="carrierImgs">
-                    {CarrierImgLinks.map(function(image) {
+                    {CarrierLogos.map(function(image) {
                         return(
                             <img src={image.src} alt={image.alt} /> 
                         )                            
@@ -37,11 +34,7 @@ const LandingPage = () => {
                 <div id="landingCardsWrapper">
                     {LandingCards.map(function(card) {
                         return(
-                            <div className="card">
-                                <img src={card.src} alt={card.alt} />
-                                <h2>{card.heading}</h2>
-                                <p>{card.paragraph}</p>
-                            </div>                        
+                            <Card src={ card.src } alt={ card.alt } h2={ card.h2 } p={ card.p } />            
                         )
                     })}    
                 </div>

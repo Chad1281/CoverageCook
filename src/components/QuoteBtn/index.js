@@ -3,6 +3,6 @@ import "./style.css";
 
 export default function QuoteBtn() {
     return(
-        <button id="quoteBtn">Get Quotes</button>
+        <button id="quoteBtn" onClick="handleClick">Get Quotes</button>
     )
 }

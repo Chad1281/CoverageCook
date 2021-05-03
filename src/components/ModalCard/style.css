@@ -61,7 +61,11 @@
 }
 
 .modalCardBody {
-    margin-top: 85px;
+    margin-top: 25px;
     border-radius: 0 0 15px 15px;
     overflow: auto;
+}
+
+.hide {
+    display: none;
 }

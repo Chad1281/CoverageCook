@@ -6,18 +6,18 @@ const LandingCards = [
     {
         src: NotePad,
         alt: "NotePad",
-        heading: "ANSWER SOME BASIC QUESTIONS",
-        paragraph: "YOU SHOULD HAVE ALL NEEDED INFO IN YOUR HEAD"
+        h2: "ANSWER SOME BASIC QUESTIONS",
+        p: "YOU SHOULD HAVE ALL NEEDED INFO IN YOUR HEAD"
     }, {
         src: Law,
         alt: "Law symbol",
-        heading: "COMPARE QUOTES SIDE BY SIDE",
-        paragraph: "YOU WON'T GET HARASSED BY A BUNCH OF AGENTS.  YOU'LL SEE YOUR QUOTES, AND ONLY ONE AGENT WILL CALL TO MAKE SURE YOU GET THE BEST DEAL."
+        h2: "COMPARE QUOTES SIDE BY SIDE",
+        p: "YOU WON'T GET HARASSED BY A BUNCH OF AGENTS.  YOU'LL SEE YOUR QUOTES, AND ONLY ONE AGENT WILL CALL TO MAKE SURE YOU GET THE BEST DEAL."
     }, {
         src: Loan,
         alt: "Loan symbol",
-        heading: "SAVE MONEY",
-        paragraph: "SLEEP WELL AT NIGHT KNOWING THAT YOU'RE WITH THE COMPANY THAT WANTS YOU MOST."
+        h2: "SAVE MONEY",
+        p: "SLEEP WELL AT NIGHT KNOWING THAT YOU'RE WITH THE COMPANY THAT WANTS YOU MOST."
     },
 ]
 
