@@ -1,8 +1,11 @@
 import React from "react";
 import "./style.css";
 
-export default function QuoteBtn() {
+function QuoteBtn({handleClick}) {
+
     return(
-        <button id="quoteBtn" onClick="handleClick">Get Quotes</button>
-    )
+        <button id="quoteBtn" onClick={ handleClick }>Get Quotes</button>
+    );
 }
+
+export default QuoteBtn;

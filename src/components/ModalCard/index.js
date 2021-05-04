@@ -1,9 +1,16 @@
 import React from "react";
+import $ from "jquery";
 import Firefly from "../../assets/images/fireflyWY.png";
 import Close from "../../assets/images/close.png";
 import "./style.css";
 
-export default function QuoteCard({handleClick, children}) {
+export default function ModalCard({children}) {
+    
+    function hideModal() {
+        $(".modal").addClass("hide");
+        $("body").css("overflow", "");
+    }
+
     return(
         <div className="modal hide">
             <div className="modalBackground"></div>
@@ -12,7 +19,7 @@ export default function QuoteCard({handleClick, children}) {
                     <header className="modalCardHead">
                         <div id="space" />
                         <img src={ Firefly } alt="Firefly logo" />
-                        <span role="button" id="quoteCancel"><img id="closeImg" src={ Close } alt="close button" onClick={handleClick} /></span>
+                        <span role="button" id="cancel"><img id="closeImg" src={ Close } alt="close button" onClick={hideModal} /></span>
                     </header>
                 </div>                
                 <div className="modalCardBody">

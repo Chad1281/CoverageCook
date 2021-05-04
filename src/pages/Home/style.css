@@ -36,7 +36,8 @@ background: #181f25;
     margin-top: -10vh;
     padding: 20px 1rem 20px 1rem;
     border-radius: 1rem;
-    backdrop-filter: blur(7px);  
+    backdrop-filter: blur(7px);
+    z-index: 1;  
 }
 
 .headerCard img {

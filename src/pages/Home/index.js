@@ -1,4 +1,5 @@
 import React from "react";
+import $ from "jquery";
 import LandingCards from "../../assets/data/landingCards";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -8,39 +9,45 @@ import Card from "../../components/Card";
 import QuoteBtn from "../../components/QuoteBtn";
 import CarrierAnimation from "../../components/CarrierAnimation";
 import Spacer from "../../components/Spacer";
+import SaltEmbed from "../../components/SaltEmbed";
 import HomeVid from "../../assets/videos/home.mp4";
 import Firefly from "../../assets/images/firefly.png";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
 import "./style.css";
 
+function showQuoteForm() {
+    console.log("show Quote")
+    $("#saltEmbed").removeClass("hide");
+    showModal();
+}
+
+function showContactForm() {
+
+    showModal();
+}
+
+function showModal() {
+    $(".modal").removeClass("hide");
+    $("body").css("overflow", "hidden");
+}
+
 const Home = () => {
 
-    function showQuoteForm() {
-
-        showModal();
-    }
-
-    function showModal() {
-        
-    }
 
     return(
         <div id="landingContainer">
-            <ModalCard />
-            <Header
-                custClass="headerCard" 
-                children={
-                    <div>
-                        <Card
-                            src={ Firefly }
-                            h2="A bright idea:"
-                            p1="We'll shop your home and auto insurance for you."
-                            p2="One agent. Lots of quotes. No hassle. Guaranteed." 
-                        />
-                        <QuoteBtn handleClick={showQuoteForm()} />
-                    </div>}
-                vidSrc={ HomeVid } 
-            />
+            <ModalCard><SaltEmbed /></ModalCard>
+            <Header custClass="headerCard" vidSrc={ HomeVid } handleClick={showQuoteForm}>
+                <div>
+                    <Card
+                        src={ Firefly }
+                        h2="A bright idea:"
+                        p1="We'll shop your home and auto insurance for you."
+                        p2="One agent. Lots of quotes. No hassle. Guaranteed."
+                    />
+                    <QuoteBtn handleClick={() => showQuoteForm()} />
+                </div>
+            </Header>   
             <CarrierAnimation />       
             <Navbar />
             <Spacer />
@@ -52,7 +59,7 @@ const Home = () => {
                         )
                     })}    
                 </div>
-            <button>Try It For Yourself</button>
+            <button onClick={showQuoteForm}>Try It For Yourself</button>
             </div>
             
             <div id="snapshotContainer">
@@ -61,7 +68,7 @@ const Home = () => {
                     <p>​ARE YOU SURE YOU'RE NOT OVERPAYING?</p>
                     <p>​WE CAN QUOTE YOU WITH A BUNCH OF COMPANIES ALL AT ONE TIME.</p>
                     <p>HERE IS A SCREENSHOT OF ONE OF OUR QUOTES. IMAGINE WHAT WE COULD DO FOR YOU!​</p>
-                    <button>Try It For Yourself</button>
+                    <button onClick={showQuoteForm}>Try It For Yourself</button>
                 </div>
                 <img src= {Snapshot} alt="list of companies with quotes from each" />
             </div>
