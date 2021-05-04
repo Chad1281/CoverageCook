@@ -15,7 +15,22 @@
     background-color: #f4f4f4;
 }
 
-img {
+#footerContainer img {
     width: 150px;
     height: auto;
+}
+
+#footerContainer p {
+    margin-top: -15px;
+}
+
+#footerContainer a {
+    text-decoration: none;
+    color: #181f25;
+}
+
+address {
+    margin-top: -15px;
+    text-decoration: none;
+    color: #181f25;
 }

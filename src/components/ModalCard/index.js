@@ -8,6 +8,8 @@ export default function ModalCard({children}) {
     
     function hideModal() {
         $(".modal").addClass("hide");
+        $("#saltEmbed").addClass("hide");
+        $(".contact").addClass("hide");
         $("body").css("overflow", "");
     }
 

@@ -10,6 +10,7 @@ import QuoteBtn from "../../components/QuoteBtn";
 import CarrierAnimation from "../../components/CarrierAnimation";
 import Spacer from "../../components/Spacer";
 import SaltEmbed from "../../components/SaltEmbed";
+import ContactForm from "../../components/ContactForm";
 import HomeVid from "../../assets/videos/home.mp4";
 import Firefly from "../../assets/images/firefly.png";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
@@ -36,7 +37,7 @@ const Home = () => {
 
     return(
         <div id="landingContainer">
-            <ModalCard><SaltEmbed /></ModalCard>
+            <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
             <Header custClass="headerCard" vidSrc={ HomeVid } handleClick={showQuoteForm}>
                 <div>
                     <Card

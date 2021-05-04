@@ -11,6 +11,13 @@ export default function Navbar() {
         showModal();
     }
 
+    function showContactForm(e) {
+        e.preventDefault();
+        console.log("show Contact")
+        $(".contact").removeClass("hide");
+        showModal();
+    }
+
     function showModal() {
         $(".modal").removeClass("hide");
         $("body").css("overflow", "hidden");
@@ -21,7 +28,7 @@ export default function Navbar() {
             <nav>
                 <a href="/home">Home</a>
                 <a href="" onClick={showQuoteForm}>Get Quotes</a>
-                <a href="/contact">Contact Agent</a>
+                <a href="" onClick={showContactForm}>Contact Agent</a>
                 <a href="/claims">Claims</a>
             </nav>
         </div>
