@@ -18,7 +18,7 @@
 }
 
 .contact input {
-    max-width: 70vw;
+    max-width: 75vw;
     margin-bottom: 15px;
     font-size: 1.3rem;
     border-radius: 5px;
@@ -26,7 +26,7 @@
 }
 
 .contact img {
-    margin: -14px 0 -4px 0;
+    margin: -10px 0 -4px 0;
     width: 600px;
     height: auto;
     border-top: 3px solid #181f25;
@@ -46,12 +46,12 @@
     align-items: flex-end;
     justify-content: flex-start;
     flex-wrap: wrap;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 #agent a {
-    margin: 0 15px 0 15px;
+    margin: 0 15px 2px 15px;
     padding-inline: 5px;
     text-decoration: none;
     color: #181f25;
@@ -60,5 +60,5 @@
 }
 
 address {
-    margin: 0 0 18px 0;
+    margin: 0 0 16px 0;
 }

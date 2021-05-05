@@ -1,6 +1,7 @@
 .modal {    
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 
 .modalBackground {
@@ -64,8 +65,4 @@
     margin-top: 25px;
     border-radius: 0 0 15px 15px;
     overflow: auto;
-}
-
-.hide {
-    display: none;
 }

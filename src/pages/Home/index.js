@@ -14,6 +14,7 @@ import ContactForm from "../../components/ContactForm";
 import HomeVid from "../../assets/videos/home.mp4";
 import Firefly from "../../assets/images/firefly.png";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
+import NerdyKid from "../../assets/images/other/NerdThinkKid.png";
 import "./style.css";
 
 function showQuoteForm() {
@@ -38,9 +39,10 @@ const Home = () => {
     return(
         <div id="landingContainer">
             <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
-            <Header custClass="headerCard" vidSrc={ HomeVid } handleClick={showQuoteForm}>
+            <Header custClass="headerCard" vidClass="headerVideo" vidSrc={ HomeVid } handleClick={showQuoteForm} imgClass="hide">
                 <div>
                     <Card
+                        cardClass="card"
                         src={ Firefly }
                         h2="A bright idea:"
                         p1="We'll shop your home and auto insurance for you."
@@ -56,7 +58,7 @@ const Home = () => {
                 <div id="landingCardsWrapper">
                     {LandingCards.map(function(card) {
                         return(
-                            <Card src={ card.src } alt={ card.alt } h2={ card.h2 } p1={ card.p } />            
+                            <Card cardClass="card" src={ card.src } alt={ card.alt } h2={ card.h2 } p1={ card.p } />            
                         )
                     })}    
                 </div>
@@ -64,6 +66,7 @@ const Home = () => {
             </div>
             
             <div id="snapshotContainer">
+                <img id="snapshotImg" src= {Snapshot} alt="list of companies with quotes from each" />
                 <div id="snapshot">
                     <h2>Stop Wondering</h2>
                     <p>​ARE YOU SURE YOU'RE NOT OVERPAYING?</p>
@@ -71,10 +74,9 @@ const Home = () => {
                     <p>HERE IS A SCREENSHOT OF ONE OF OUR QUOTES. IMAGINE WHAT WE COULD DO FOR YOU!​</p>
                     <button onClick={showQuoteForm}>Try It For Yourself</button>
                 </div>
-                <img src= {Snapshot} alt="list of companies with quotes from each" />
+                <img id="nerd" src={NerdyKid} alt="nerdy kid wandering" />
             </div>
-            <Spacer />                        
-            <Footer />
+            <Spacer />   
         </div>
     )
 }

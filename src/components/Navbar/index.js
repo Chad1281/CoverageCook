@@ -27,9 +27,9 @@ export default function Navbar() {
         <div id="navContainer">
             <nav>
                 <a href="/home">Home</a>
-                <a href="" onClick={showQuoteForm}>Get Quotes</a>
-                <a href="" onClick={showContactForm}>Contact Agent</a>
-                <a href="/claims">Claims</a>
+                <span role="button" href="" onClick={showQuoteForm}>Get Quotes</span>
+                <span role="button" href="" onClick={showContactForm}>Contact Agent</span>
+                <a href="/carriers">Carriers</a>
             </nav>
         </div>
     )

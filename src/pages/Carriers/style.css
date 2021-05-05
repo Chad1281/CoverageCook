@@ -1,0 +1,30 @@
+.carriersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+}
+
+.carriersCard {
+    text-align: center;
+    margin: 30px 10px;
+    padding: 10px;
+    min-width: 250px;
+    background-color: #7ac4ea;
+    border-radius: 15px;
+    border: 3px solid #626267;
+    color: #181f25;
+}
+
+.carriersCard img {
+    margin: 20px 0 -15px 0;
+    height: 40px;
+}
+
+.carriersCard h2 {
+    margin-bottom: -10px;
+}
+
+.carriersCard p {
+    font-weight: 500;
+}

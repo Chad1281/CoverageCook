@@ -1,10 +1,9 @@
 import React from "react";
-import { Router, Switch } from "react-router-dom";
-// import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
-// import Header from "./components/Header";
-// import Navbar from "./components/Navbar";
+import Carriers from "./pages/Carriers";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -18,27 +17,16 @@ function App() {
   resetHeight();
 
   return (
-    <>
-      {/* <Switch> */}
-        <Home />
-      {/* </Switch> */}
-    {/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div> */}
-    </>
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/carriers" component={Carriers} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>  
   );
 }
 
