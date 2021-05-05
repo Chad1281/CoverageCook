@@ -10,7 +10,7 @@ export default function ModalCard({children}) {
         $(".modal").addClass("hide");
         $("#saltEmbed").addClass("hide");
         $(".contact").addClass("hide");
-        $("body").css("overflow", "");
+        $(".container").css("overflow", "");
     }
 
     return(
@@ -20,7 +20,7 @@ export default function ModalCard({children}) {
                 <div className="fixedModalCardHead">
                     <header className="modalCardHead">
                         <div id="space" />
-                        <img src={ Firefly } alt="Firefly logo" />
+                        <img id="logo" src={ Firefly } alt="Firefly logo" />
                         <span role="button" id="cancel"><img id="closeImg" src={ Close } alt="close button" onClick={hideModal} /></span>
                     </header>
                 </div>                

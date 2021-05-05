@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -9,7 +9,7 @@
     height: 100vh;
     position: fixed;
     backdrop-filter: blur(7px) brightness(60%);
-    z-index: 2;
+    z-index: 1;
 }
 
 .modalCard {
@@ -51,9 +51,9 @@
     height: 20px;
 }
 
-.modalCardHead img {
+#logo  {
     width: 120px;
-    height: auto;
+    height: 92px;
 }
 
 #closeImg {

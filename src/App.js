@@ -4,6 +4,9 @@ import './App.css';
 import Home from "./pages/Home";
 import Carriers from "./pages/Carriers";
 import Footer from "./components/Footer";
+import ModalCard from "./components/ModalCard";
+import SaltEmbed from "./components/SaltEmbed";
+import ContactForm from "./components/ContactForm";
 
 function App() {
 
@@ -18,13 +21,16 @@ function App() {
 
   return (
     <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/carriers" component={Carriers} />
-        </Switch>
-        <Footer />
+      <div>        
+        <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
+        <div className="container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/home" component={Home} />
+            <Route exact path="/carriers" component={Carriers} />
+          </Switch>
+          <Footer />
+        </div>        
       </div>
     </Router>  
   );

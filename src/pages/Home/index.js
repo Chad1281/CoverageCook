@@ -1,7 +1,6 @@
 import React from "react";
 import $ from "jquery";
 import LandingCards from "../../assets/data/landingCards";
-import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ModalCard from "../../components/ModalCard";
 import Navbar from "../../components/Navbar";
@@ -30,7 +29,7 @@ function showContactForm() {
 
 function showModal() {
     $(".modal").removeClass("hide");
-    $("body").css("overflow", "hidden");
+    $(".container").css("overflow", "hidden");
 }
 
 const Home = () => {
@@ -38,7 +37,6 @@ const Home = () => {
 
     return(
         <div id="landingContainer">
-            <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
             <Header custClass="headerCard" vidClass="headerVideo" vidSrc={ HomeVid } handleClick={showQuoteForm} imgClass="hide">
                 <div>
                     <Card
