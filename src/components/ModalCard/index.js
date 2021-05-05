@@ -10,7 +10,7 @@ export default function ModalCard({children}) {
         $(".modal").addClass("hide");
         $("#saltEmbed").addClass("hide");
         $(".contact").addClass("hide");
-        $(".container").css("overflow", "");
+        $(".container").removeClass("noScroll");
     }
 
     return(

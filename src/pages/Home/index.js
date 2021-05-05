@@ -29,7 +29,7 @@ function showContactForm() {
 
 function showModal() {
     $(".modal").removeClass("hide");
-    $(".container").css("overflow", "hidden");
+    $(".container").addClass("noScroll");
 }
 
 const Home = () => {

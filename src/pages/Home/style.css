@@ -48,9 +48,9 @@ button:hover {
     height: auto;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
     .headerVideo {
-        min-width: 1600px;
+        min-width: 1800px;
     }
 }
 

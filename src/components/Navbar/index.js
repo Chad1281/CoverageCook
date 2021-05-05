@@ -20,7 +20,7 @@ export default function Navbar() {
 
     function showModal() {
         $(".modal").removeClass("hide");
-        $("body").css("overflow", "hidden");
+        $(".container").addClass("noScroll");
     }
 
     return(
