@@ -13,7 +13,9 @@ export default function Carriers() {
     return(
         <div className="carriers">
             <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
-            <Header vidClass="hide" imgClass="headerImage" imgSrc={Insurance} />
+            <Header custClass="carrierHead" vidClass="hide" imgClass="headerImage" imgSrc={Insurance}>
+                <h2>Insurance Carriers</h2>
+            </Header>
             <Navbar />
             <div className="carriersContainer">
                 {CarriersLogos.map(function(card) {

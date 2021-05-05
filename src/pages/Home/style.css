@@ -42,7 +42,8 @@ button:hover {
 
 .headerImage {
     margin: 0;
-    min-width: 100vw;
+    width: 100vw;
+    min-width: 900px;
     height: auto;
 }
 

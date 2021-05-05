@@ -6,21 +6,3 @@
     overflow: hidden;
     background-color: #7ac4ea;
 }
-
-.headerVideo {
-    min-width: 100vw;
-}
-
-.headerImage {
-    margin: 0 500px;
-    left: 0;
-    width: 100vw;
-    min-width: 100vw;
-    height: 600px;
-}
-
-@media screen and (max-width: 1600px) {
-    .headerVideo {
-        min-width: 1600px;
-    }
-}
