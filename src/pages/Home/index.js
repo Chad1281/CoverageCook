@@ -14,15 +14,14 @@ import NerdyKid from "../../assets/images/other/NerdThinkKid.png";
 import "./style.css";
 
 function showQuoteForm() {
-    console.log("show Quote")
     $("#saltEmbed").removeClass("hide");
     showModal();
 }
 
-function showContactForm() {
-
-    showModal();
-}
+// function showContactForm() {
+//     $(".contact").removeClass("hide");
+//     showModal();
+// }
 
 function showModal() {
     $(".modal").removeClass("hide");
@@ -30,7 +29,6 @@ function showModal() {
 }
 
 const Home = () => {
-
 
     return(
         <div id="landingContainer">
@@ -69,7 +67,7 @@ const Home = () => {
                     <p>HERE IS A SCREENSHOT OF ONE OF OUR QUOTES. IMAGINE WHAT WE COULD DO FOR YOU!​</p>
                     <button onClick={showQuoteForm}>Try It For Yourself</button>
                 </div>
-                <img id="nerd" src={NerdyKid} alt="nerdy kid wandering" />
+                <img id="nerd" src={NerdyKid} alt="nerdy kid wondering" />
             </div>
             <Spacer />   
         </div>

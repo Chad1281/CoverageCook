@@ -9,7 +9,7 @@ import "./style.css";
 export default function Carriers() {
     return(
         <div className="carriers">
-            <Header custClass="carrierHead" vidClass="hide" imgClass="headerImage" imgSrc={Insurance}>
+            <Header custClass="carrierHead" vidClass="hide" imgClass="headerImage" imgSrc={Insurance} imgAlt="Picture of downtown Austin and capital from South Congress above the Colorodo River">
                 <h2>Insurance Carriers</h2>
             </Header>
             <Navbar />
@@ -27,12 +27,11 @@ export default function Carriers() {
                         >
                             <p>Customer Service:<br /><a href={csN}>{card.csN}</a></p>
                             <p>Billing:<br /><a href={billN}>{card.billN}</a></p>
-                            <p>Claims:<br /><a href={claimsN} alt="Claims Number">{card.claimsN}</a></p>    
+                            <p>Claims:<br /><a href={claimsN}>{card.claimsN}</a></p>    
                         </Card>                        
                     )
                 })}
-            </div>
-                
+            </div>                
         </div>
     )
 }
