@@ -212,10 +212,6 @@ button:hover {
     border-color: #181f25;
 }
 
-.hide {
-    display: none;
-}
-
 .small {
     transform: scale(.25);
 }
