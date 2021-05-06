@@ -15,6 +15,9 @@ export default function Carriers() {
             <Navbar />
             <div className="carriersContainer">
                 {CarriersLogos.map(function(card) {
+                    let csN = "tel:"+card.csN;
+                    let billN = "tel:"+card.billN;
+                    let claimsN = "tel:"+card.claimsN;
                     return(
                         <Card 
                         cardClass="carriersCard" 
@@ -22,9 +25,9 @@ export default function Carriers() {
                         alt={ card.alt }
                         h2={ card.h2 }
                         >
-                            <p>Customer Service:<br /><a href="tel:" {...card.csN}>{card.csN}</a></p>
-                            <p>Billing:<br /><a href="tel:" {...card.billN}>{card.billN}</a></p>
-                            <p>Claims:<br /><a href="tel:" {...card.claimsN} alt="Claims Number">{card.claimsN}</a></p>    
+                            <p>Customer Service:<br /><a href={csN}>{card.csN}</a></p>
+                            <p>Billing:<br /><a href={billN}>{card.billN}</a></p>
+                            <p>Claims:<br /><a href={claimsN} alt="Claims Number">{card.claimsN}</a></p>    
                         </Card>                        
                     )
                 })}
