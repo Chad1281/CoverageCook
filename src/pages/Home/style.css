@@ -54,9 +54,9 @@ button:hover {
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1921px) {
     .headerVideo {
-        min-width: 2000px;
+        min-height: fit-content;
     }
 }
 
