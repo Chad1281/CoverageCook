@@ -56,7 +56,8 @@ button:hover {
 
 @media screen and (min-width: 1921px) {
     .headerVideo {
-        min-height: fit-content;
+        min-height: max-content;
+        max-height: 85vh;
     }
 }
 
