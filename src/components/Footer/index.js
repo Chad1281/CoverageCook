@@ -22,8 +22,9 @@ export default function Footer() {
             </ul> */}
             <div id="footerContainer">
                 <img src={ FireflyBW } alt="Firefly Logo" />
-                <h3>Chad Cook Firefly Agency</h3>
+                <h3>Cook Firefly Insurance Agency</h3>
                 <p><a href="tel:512-644-3039" alt="Phone Number">Contact Chad Cook 512-312-7360</a></p>
+                <p><a href="tel:833-360-0202" alt="Toll Free Number">Toll Free 1(833) 436-0202</a></p>
                 <address><a href="mailto:ccook@fireflyagency.com" title="Email" alt="email">ccook@fireflyagency.com</a></address>
             </div>
         </div>

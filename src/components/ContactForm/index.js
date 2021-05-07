@@ -15,11 +15,11 @@ export default function ContactForm() {
                 <label for="phone">Phone Number:</label><br />
                 <input type="tel" id="phone" name="phone" placeholder="555-555-5555" /><br />
                 <label for="comment">Comments:</label><br />
-                <textarea id="comment" name="comment" placeholder="Leave a comment"></textarea><br />
+                <textarea id="comment" name="comment" placeholder="Comments or feedback"></textarea><br />
                 <input type="submit" name="submit" value="Submit" />
             </form>
             <div id="agent">
-                <p><a href="tel:512-644-3039">Call Chad Cook 512-312-7360</a></p>
+                <p><a href="tel:512-644-3039">Call Cook at 512-312-7360</a></p>
                 <address><a href="mailto:ccook@fireflyagency.com" title="Email" alt="email">Email ccook@fireflyagency.com</a></address>
             </div>            
             <img src={Phone} alt="Man on iPad while on phone" />
