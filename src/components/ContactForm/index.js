@@ -19,8 +19,8 @@ export default function ContactForm() {
                 <input type="submit" name="submit" value="Submit" />
             </form>
             <div id="agent">
-                <p><a href="tel:512-644-3039">Call Cook at 512-312-7360</a></p>
-                <address><a href="mailto:ccook@fireflyagency.com" title="Email" alt="email">Email ccook@fireflyagency.com</a></address>
+                <p><a href="tel:512-644-3039" title="Phone Number">Call Cook at 512-312-7360</a></p>
+                <address><a href="mailto:ccook@fireflyagency.com" title="Email">Email ccook@fireflyagency.com</a></address>
             </div>            
             <img src={Phone} alt="Man on iPad while on phone" />
         </div>
