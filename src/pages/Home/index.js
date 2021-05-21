@@ -61,13 +61,15 @@ const Home = () => {
             <div id="snapshotContainer">
                 <img id="snapshotImg" src= {Snapshot} alt="list of companies with quotes from each" />
                 <div id="snapshot">
-                    <h2>Stop Wondering</h2>
-                    <p>​ARE YOU SURE YOU'RE NOT OVERPAYING?</p>
+                    <h3>​ARE YOU SURE YOU'RE NOT OVERPAYING?</h3>
                     <p>​WE CAN QUOTE YOU WITH A BUNCH OF COMPANIES ALL AT ONE TIME.</p>
                     <p>HERE IS A SCREENSHOT OF ONE OF OUR QUOTES. IMAGINE WHAT WE COULD DO FOR YOU!​</p>
                     <button onClick={showQuoteForm}>Try It For Yourself</button>
                 </div>
-                <img id="nerd" src={NerdyKid} alt="nerdy kid wondering" />
+                <div id="wonder">
+                    <h2>Stop Wondering</h2>
+                    <img id="nerd" src={NerdyKid} alt="nerdy kid wondering" />
+                </div>                
             </div>
             <Spacer />   
         </div>
