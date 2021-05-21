@@ -68,6 +68,7 @@ button:hover {
     padding: 20px 1rem 20px 1rem;
     border-radius: 1rem;
     backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
     z-index: 1;  
 }
 

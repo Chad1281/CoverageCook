@@ -9,6 +9,7 @@
     height: 100vh;
     position: fixed;
     backdrop-filter: blur(7px) brightness(60%);
+    -webkit-backdrop-filter: blur(7px) brightness(60%);
     z-index: 1;
 }
 
