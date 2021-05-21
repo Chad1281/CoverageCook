@@ -4,7 +4,7 @@
 
 Quickly get auto & home insurance quotes on this website. Send an agent a contact request or contact the agent directly. Access carriers information for billing, service, or claims on the Carriers page.
 
-[![Example of page usage](https://github.com/Chad1281/CoverageCook/blob/main/src/assets/videos/coverageCook.mp4)](https://github.com/Chad1281/CoverageCook/blob/main/src/assets/videos/coverageCook.mp4)
+[![Example of page usage](https://drive.google.com/file/d/1aIYF2iboKCLjCrgJL0wntNo-gu5XPfyT/view)](https://drive.google.com/file/d/1aIYF2iboKCLjCrgJL0wntNo-gu5XPfyT/view)
 
 ## Deployment
 
