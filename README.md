@@ -8,7 +8,7 @@ Quickly get auto & home insurance quotes on this website. Send an agent a contac
 
 ## Deployment
 
-Access the page at [coveragecook.com](coveragecook.com)
+Access the page at [https://coveragecook.com/](https://coveragecook.com/)
 
 ## Utilization
 
