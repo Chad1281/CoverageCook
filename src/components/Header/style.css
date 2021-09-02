@@ -5,4 +5,5 @@
     align-items: center;
     overflow: hidden;
     background-color: #7ac4ea;
+    z-index: 1;
 }

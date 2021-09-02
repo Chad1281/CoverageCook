@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Phone from "../../assets/images/other/phone.png";
-import Contact from "./contact.php";
+import Contact from "./contact.js";
 
 export default function ContactForm() {
     return(

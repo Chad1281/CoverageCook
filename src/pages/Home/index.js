@@ -47,7 +47,7 @@ const Home = () => {
             <CarrierAnimation />       
             <Navbar />
             <Spacer />
-            <div id="landingCardsContainer">
+            <div id="landingCardsContainer" data-scroll-speed="-2">
                 <div id="landingCardsWrapper">
                     {LandingCards.map(function(card) {
                         return(
