@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
 import Carriers from "./pages/Carriers";
@@ -28,6 +28,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/carriers" component={Carriers} />
+            <Redirect to="/" />
           </Switch>
           <Footer />
         </div>        
