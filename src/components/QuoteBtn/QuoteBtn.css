@@ -1,0 +1,28 @@
+.quoteBtn {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(120%);
+    transform: scale(1.1);
+}
+
+.green {
+    background-color: rgb(110, 219, 0);
+    border-color: rgb(1, 148, 33);
+    color: #181f25;
+}
+
+.grey {
+    background-color: #626267;
+    color: #f4f4f4;
+}

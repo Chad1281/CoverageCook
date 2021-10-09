@@ -1,0 +1,55 @@
+import React from 'react';
+import $ from 'jquery';
+
+import NewHeader from '../../../components/NewHeader/NewHeader';
+import Jumbotron from '../../../components/Jumbotron/Jumbotron';
+import KitchenImg from '../../../assets/images/landingPages/kitchen.png';
+import DarkFirefly from '../../../assets/images/logos/darkFirefly.png';
+import Spacer from '../../../components/Spacer';
+
+import './Kitchen.css';
+
+const Kitchen = () => {
+    
+    function showQuoteForm() {
+        $("#saltEmbed").removeClass("hide");
+        showModal();
+    }
+
+    function showContactForm() {
+        $(".contact").removeClass("hide");
+        showModal();
+    }
+
+    function showModal() {
+        $(".modal").removeClass("hide");
+        $(".container").addClass("noScroll");
+    }
+
+
+    return(
+        <div>
+            <NewHeader
+                quoteClick={() => showQuoteForm()}
+                contactClick={() => showContactForm()}
+            />
+            <Jumbotron 
+                imgSrc={KitchenImg} 
+                imgAlt="Kitchen with island" 
+                logoSrc={DarkFirefly} 
+                logoAlt="Dark Firefly Insurance Agency Logo"
+                quoteBtnClass="grey"
+                quoteClick={() => showQuoteForm()}
+                custClass="kitchenJumboContent">  
+                <p>Custom Insurance Coverage.</p> 
+                <p>Instant Online Quotes.</p>            
+                <p>Several Companies.</p> 
+                <p>One Agent.</p>  
+                <p>No Endless Calls.</p> 
+            </Jumbotron>
+            <Spacer />
+        </div>
+    )
+}
+
+export default Kitchen;

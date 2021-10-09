@@ -1,0 +1,28 @@
+import React from 'react';
+
+import QuoteBtn from '../QuoteBtn/QuoteBtn';
+
+import './Jumbotron.css';
+
+export default function Jumbotron(props) {
+    return(
+        <div className="jumbotron">
+            <img 
+                className="jumboImg" 
+                src={ props.imgSrc } 
+                alt={ props.imgAlt } />
+            <img
+                className="logoImg"
+                src={ props.logoSrc }
+                alt={ props.logoAlt } />
+            <QuoteBtn 
+                custClass={props.quoteBtnClass}
+                handleClick={props.quoteClick} >
+                Get Quotes
+            </QuoteBtn>     
+            <div className={props.custClass}>
+                {props.children}
+            </div>
+        </div>
+    )
+}

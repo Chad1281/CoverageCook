@@ -22,14 +22,6 @@ background: #181f25;
     height: 100px;
 }
 
-button {
-    cursor: pointer;
-}
-
-button:hover {
-    filter: brightness(120%);
-  }
-
 #landingContainer {
     margin: 0;
     min-height: 100vh;
@@ -67,7 +59,6 @@ button:hover {
     margin-top: 0;
     padding: 20px 1rem 20px 1rem;
     border-radius: 1rem;
-    /* filter: opacity(40%); */
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     z-index: 1;  

@@ -1,0 +1,19 @@
+.spacer {
+    width: 100vw;
+    min-height: 200px;
+    background-color: #181f25;
+}
+
+.kitchenJumboContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: 75vw;
+    margin: 60px 0;
+    color: #f4f4f4;
+    font-size: 2rem;
+}
+
+.kitchenJumboContent p {
+    margin: 15px;
+}

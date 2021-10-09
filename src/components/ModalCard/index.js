@@ -18,11 +18,11 @@ export default function ModalCard({children}) {
             <div className="modalBackground"></div>
             <div className="modalCard">
                 <div className="fixedModalCardHead">
-                    <header className="modalCardHead">
+                    <div className="modalCardHead">
                         <div id="space" />
                         <img id="logo" src={ Firefly } alt="Firefly logo" />
                         <span role="button" id="cancel"><img id="closeImg" src={ Close } alt="close button" onClick={hideModal} /></span>
-                    </header>
+                    </div>
                 </div>                
                 <div className="modalCardBody">
                     <section className="modalSection">{ children }</section>  

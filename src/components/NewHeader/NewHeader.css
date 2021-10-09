@@ -1,0 +1,57 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+    background-color: #f4f4f4;
+    z-index: 2;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+}
+
+#links img {
+    width: 30px;
+    height: 30px;
+}
+
+#links a {
+    padding: 15px;
+}
+
+#cookLogo {
+    width: auto;
+    height: 100px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    color: #181f25;   
+    font-weight: bold; 
+    font-size: 1.2rem;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: #181f25;   
+}
+
+#navBar span {    
+    cursor: pointer;
+}
+
+#navBar span:hover {
+    transform: scale(1.2);
+}

@@ -2,9 +2,9 @@ import React from "react";
 import $ from "jquery";
 import LandingCards from "../../assets/data/landingCards";
 import Header from "../../components/Header";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card";
-import QuoteBtn from "../../components/QuoteBtn";
+import QuoteBtn from "../../components/QuoteBtn/QuoteBtn";
 import CarrierAnimation from "../../components/CarrierAnimation";
 import Spacer from "../../components/Spacer";
 import HomeVid from "../../assets/videos/home.mp4";
@@ -18,10 +18,10 @@ function showQuoteForm() {
     showModal();
 }
 
-// function showContactForm() {
-//     $(".contact").removeClass("hide");
-//     showModal();
-// }
+function showContactForm() {
+    $(".contact").removeClass("hide");
+    showModal();
+}
 
 function showModal() {
     $(".modal").removeClass("hide");
@@ -41,7 +41,7 @@ const Home = () => {
                         p1="We'll shop your home and auto insurance for you."
                         p2="One agent. Lots of quotes. No hassle. Guaranteed."
                     />
-                    <QuoteBtn handleClick={() => showQuoteForm()} />
+                    <QuoteBtn custId="quoteBtn" handleClick={() => showQuoteForm()} />
                 </div>
             </Header>   
             <CarrierAnimation />       

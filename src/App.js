@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-d
 import './App.css';
 import Home from "./pages/Home";
 import Carriers from "./pages/Carriers";
+import Kitchen from "./pages/Landing/Kitchen/Kitchen";
 import Footer from "./components/Footer";
 import ModalCard from "./components/ModalCard";
 import SaltEmbed from "./components/SaltEmbed";
@@ -28,6 +29,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/carriers" component={Carriers} />
+            <Route exact path="/Insurance" component={Kitchen} />
             <Redirect to="/" />
           </Switch>
           <Footer />
