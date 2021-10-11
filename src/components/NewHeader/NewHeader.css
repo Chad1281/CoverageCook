@@ -30,7 +30,7 @@ a:hover {
 }
 
 #cookLogo {
-    width: auto;
+    width: 432px;
     height: 90px;
 }
 
@@ -89,6 +89,7 @@ a:hover {
     }
 
     #cookLogo {
+        width: 288px;
         height: 60px;
     }
 
