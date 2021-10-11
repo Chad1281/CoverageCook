@@ -1,7 +1,7 @@
 import React from "react";
 import $ from "jquery";
-import Firefly from "../../assets/images/fireflyWY.png";
-import Close from "../../assets/images/close.png";
+import Firefly from "../../assets/images/fireflyWY.avif";
+import Close from "../../assets/images/close.avif";
 import "./style.css";
 
 export default function ModalCard({children}) {

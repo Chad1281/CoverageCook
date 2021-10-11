@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CoverageCook from '../../assets/images/logos/cookLogo.png';
-import Facebook from '../../assets/images/logos/facebook.png';
-import LinkedIn from '../../assets/images/logos/linkedin.png';
+import CoverageCook from '../../assets/images/logos/cookLogo.avif';
+import Facebook from '../../assets/images/logos/facebook.avif';
+import LinkedIn from '../../assets/images/logos/linkedin.avif';
 
 import './NewHeader.css';
 

@@ -1,6 +1,6 @@
-import NotePad from "../images/landingCards/notepad.png";
-import Law from "../images/landingCards/law.png";
-import Loan from "../images/landingCards/loan.png";
+import NotePad from "../images/landingCards/notepad.avif";
+import Law from "../images/landingCards/law.avif";
+import Loan from "../images/landingCards/loan.avif";
 
 const LandingCards = [
     {

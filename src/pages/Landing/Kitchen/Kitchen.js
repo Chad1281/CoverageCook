@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import Jumbotron from '../../../components/Jumbotron/Jumbotron';
 import KitchenImg from '../../../assets/images/landingPages/kitchen.png';
-import DarkFirefly from '../../../assets/images/logos/darkFirefly.png';
+import DarkFirefly from '../../../assets/images/logos/darkFirefly.avif';
 import Spacer from '../../../components/Spacer';
 
 import './Kitchen.css';

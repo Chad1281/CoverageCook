@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Phone from "../../assets/images/other/phone.png";
+import Phone from "../../assets/images/other/phone.avif";
 import Contact from "./contact.js";
 
 export default function ContactForm() {

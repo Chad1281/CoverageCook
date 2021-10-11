@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Card from "../../components/Card";
 import CarriersLogos from "../../assets/data/carrierLogos.js";
-import Insurance from "../../assets/images/other/insurance.png";
+import Insurance from "../../assets/images/other/insurance.avif";
 import "./style.css";
 
 export default function Carriers() {

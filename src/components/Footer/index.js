@@ -1,6 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import FireflyBW from "../../assets/images/fireflyBW.png";
+import FireflyBW from "../../assets/images/fireflyBW.avif";
 import "./style.css";
 
 export default function Footer() {

@@ -4,9 +4,9 @@ import $ from "jquery";
 import LandingCards from "../../assets/data/landingCards";
 import Card from "../../components/Card";
 import Spacer from "../../components/Spacer";
-import LightFirefly from "../../assets/images/logos/lightFirefly.png";
-import Snapshot from "../../assets/images/landingCards/snapshot.png";
-import NerdyKid from "../../assets/images/other/NerdThinkKid.png";
+import LightFirefly from "../../assets/images/logos/lightFirefly.avif";
+import Snapshot from "../../assets/images/landingCards/snapshot.avif";
+import NerdyKid from "../../assets/images/other/NerdThinkKid.avif";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import WildFlowers from "../../assets/images/landingPages/wildflowers.png"
 
