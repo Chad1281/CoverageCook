@@ -7,7 +7,6 @@ import Spacer from "../../components/Spacer";
 import LightFirefly from "../../assets/images/logos/lightFirefly.png";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
 import NerdyKid from "../../assets/images/other/NerdThinkKid.png";
-import NewHeader from "../../components/NewHeader/NewHeader";
 import Jumbotron from "../../components/Jumbotron/Jumbotron";
 import WildFlowers from "../../assets/images/landingPages/wildflowers.png"
 
@@ -15,11 +14,6 @@ import "./style.css";
 
 function showQuoteForm() {
     $("#saltEmbed").removeClass("hide");
-    showModal();
-}
-
-function showContactForm() {
-    $(".contact").removeClass("hide");
     showModal();
 }
 
@@ -32,10 +26,6 @@ const Home = () => {
 
     return(
         <div id="landingContainer">
-            {/* <NewHeader 
-                quoteClick={() => showQuoteForm()}
-                contactClick={() => showContactForm()}
-            /> */}
             <Jumbotron 
                 imgSrc={WildFlowers} 
                 imgAlt="Colorful Sunrise and Bluebonnets in the Texas Hill Country" 

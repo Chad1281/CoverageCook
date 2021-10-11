@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
 import $ from 'jquery';
 
@@ -7,11 +7,12 @@ import Carriers from "./pages/Carriers";
 import Kitchen from "./pages/Landing/Kitchen/Kitchen";
 import Footer from "./components/Footer";
 import ModalCard from "./components/ModalCard";
-import SaltEmbed from "./components/SaltEmbed";
-import ContactForm from "./components/ContactForm";
 import NewHeader from "./components/NewHeader/NewHeader";
 
 import './App.css';
+
+const SaltEmbed = React.lazy(() => import('./components/SaltEmbed'));
+const ContactForm = React.lazy(() => import('./components/ContactForm'));
 
 function App() {
 
@@ -27,22 +28,27 @@ function App() {
   function showQuoteForm() {
     $("#saltEmbed").removeClass("hide");
     showModal();
-}
+  }
 
-function showContactForm() {
+  function showContactForm() {
     $(".contact").removeClass("hide");
     showModal();
-}
+  }
 
-function showModal() {
+  function showModal() {
     $(".modal").removeClass("hide");
     $(".container").addClass("noScroll");
-}
+  }
 
   return (
     <Router>
       <div>        
-        <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
+        <ModalCard>
+          <Suspense fallback={<h2>Loading</h2>}>
+            <SaltEmbed />
+            <ContactForm />
+          </Suspense>
+        </ModalCard>
         <div className="container">
           <NewHeader
               quoteClick={() => showQuoteForm()}

@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/Header";
-import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card";
 import CarriersLogos from "../../assets/data/carrierLogos.js";
 import Insurance from "../../assets/images/other/insurance.png";

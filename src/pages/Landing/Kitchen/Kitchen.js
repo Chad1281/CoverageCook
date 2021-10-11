@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
 
-import NewHeader from '../../../components/NewHeader/NewHeader';
 import Jumbotron from '../../../components/Jumbotron/Jumbotron';
 import KitchenImg from '../../../assets/images/landingPages/kitchen.png';
 import DarkFirefly from '../../../assets/images/logos/darkFirefly.png';
@@ -16,11 +15,6 @@ const Kitchen = () => {
         showModal();
     }
 
-    function showContactForm() {
-        $(".contact").removeClass("hide");
-        showModal();
-    }
-
     function showModal() {
         $(".modal").removeClass("hide");
         $(".container").addClass("noScroll");
@@ -29,10 +23,6 @@ const Kitchen = () => {
 
     return(
         <div>
-            <NewHeader
-                quoteClick={() => showQuoteForm()}
-                contactClick={() => showContactForm()}
-            />
             <Jumbotron 
                 imgSrc={KitchenImg} 
                 imgAlt="Kitchen with island" 

@@ -60,7 +60,7 @@ a:hover {
     header {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
     }
 
     #links {
@@ -79,6 +79,7 @@ a:hover {
     header {
         display: flex;
         align-items: flex-start;
+        position: absolute;
     }
 
     #links {
