@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -18,20 +19,19 @@ a:hover {
     display: flex;
     justify-content: center;
     width: 30vw;
+    margin: 0;
+    padding: 0;
 }
 
 #links img {
     width: 30px;
     height: 30px;
-}
-
-#links a {
-    padding: 15px;
+    padding-right: 30px;
 }
 
 #cookLogo {
     width: auto;
-    height: 100px;
+    height: 90px;
 }
 
 #navBar {
@@ -54,4 +54,46 @@ a:hover {
 
 #navBar span:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    #links {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 100vw;
+    }
+
+    #navBar {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #links {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #cookLogo {
+        height: 60px;
+    }
+
+    #navBar {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

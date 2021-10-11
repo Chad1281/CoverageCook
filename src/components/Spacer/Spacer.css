@@ -1,0 +1,23 @@
+.spacer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 200px;
+    background-color: #181f25;
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+
+.spacer div {
+    margin: 0;
+}
+
+.spacer p {
+    width: 70vw;
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+}

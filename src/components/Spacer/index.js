@@ -1,7 +1,11 @@
 import React from "react";
 
-export default function Spacer() {
+import './Spacer.css';
+
+export default function Spacer(props) {
     return(
-        <div className="spacer" />
+        <div className="spacer">
+            {props.children}
+        </div>
     )
 }

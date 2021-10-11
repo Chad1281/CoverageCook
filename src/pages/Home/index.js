@@ -1,16 +1,16 @@
 import React from "react";
 import $ from "jquery";
+
 import LandingCards from "../../assets/data/landingCards";
-import Header from "../../components/Header";
-import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card";
-import QuoteBtn from "../../components/QuoteBtn/QuoteBtn";
-import CarrierAnimation from "../../components/CarrierAnimation";
 import Spacer from "../../components/Spacer";
-import HomeVid from "../../assets/videos/home.mp4";
-import Firefly from "../../assets/images/firefly.png";
+import LightFirefly from "../../assets/images/logos/lightFirefly.png";
 import Snapshot from "../../assets/images/landingCards/snapshot.png";
 import NerdyKid from "../../assets/images/other/NerdThinkKid.png";
+import NewHeader from "../../components/NewHeader/NewHeader";
+import Jumbotron from "../../components/Jumbotron/Jumbotron";
+import WildFlowers from "../../assets/images/landingPages/wildflowers.png"
+
 import "./style.css";
 
 function showQuoteForm() {
@@ -32,21 +32,30 @@ const Home = () => {
 
     return(
         <div id="landingContainer">
-            <Header custClass="headerCard" vidClass="headerVideo" vidSrc={ HomeVid } handleClick={showQuoteForm} imgClass="hide">
+            {/* <NewHeader 
+                quoteClick={() => showQuoteForm()}
+                contactClick={() => showContactForm()}
+            /> */}
+            <Jumbotron 
+                imgSrc={WildFlowers} 
+                imgAlt="Colorful Sunrise and Bluebonnets in the Texas Hill Country" 
+                logoSrc={LightFirefly} 
+                logoAlt="Light Firefly Insurance Agency Logo"
+                quoteBtnClass="grey"
+                quoteClick={() => showQuoteForm()}
+                custClass="jumboContent">  
+                <p>Custom Insurance Coverage.</p> 
+                <p>Instant Online Quotes.</p>            
+                <p>Several Companies.</p> 
+                <p>One Agent.</p>  
+                <p>No Endless Calls.</p> 
+            </Jumbotron>
+            <Spacer>
                 <div>
-                    <Card
-                        cardClass="card"
-                        src={ Firefly }
-                        h2="A bright idea:"
-                        p1="We'll shop your home and auto insurance for you."
-                        p2="One agent. Lots of quotes. No hassle. Guaranteed."
-                    />
-                    <QuoteBtn custId="quoteBtn" handleClick={() => showQuoteForm()} />
+                    <p>"My special cause, the one that alerts my interest and quickens the pace of my life, is to preserve the wildflowers and native plants that define the regions of our land-to encourage and promote their use in appropriate areas, and thus help pass on to generation in waiting the quiet jobs and satisfactions I have known since my childhood." ~ Lady Bird Johnson</p>
+                    <p>CoverageCook.com is a Firefly Insurance Agency located in the Texas Hill Country amongst some of the most beautiful wildflowers and countrysides in the world. We strive to give you the best possible insurance shopping experience while making the process easy and hassle free. We'll shop your auto and home insurance for you and customize your coverage to find you the best possible price.</p>
                 </div>
-            </Header>   
-            <CarrierAnimation />       
-            <Navbar />
-            <Spacer />
+            </Spacer>
             <div id="landingCardsContainer" data-scroll-speed="-2">
                 <div id="landingCardsWrapper">
                     {LandingCards.map(function(card) {

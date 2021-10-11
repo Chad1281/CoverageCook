@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background-color: #181f25;
 }
 
 ::-webkit-scrollbar {
@@ -18,14 +19,9 @@ body {
 background: #181f25; 
 }  
 
-.spacer {
-    height: 100px;
-}
-
 #landingContainer {
     margin: 0;
     min-height: 100vh;
-    background-color: #181f25;
 }
 
 .headerVideo {
@@ -37,19 +33,6 @@ background: #181f25;
     width: 100vw;
     min-width: 900px;
     height: auto;
-}
-
-@media screen and (max-width: 1400px) {
-    .headerVideo {
-        min-width: 1400px;
-    }
-}
-
-@media screen and (min-width: 1921px) {
-    .headerVideo {
-        min-width: 2800px;
-        max-height: 86vh;
-    }
 }
 
 .headerCard {
@@ -227,3 +210,4 @@ background: #181f25;
         margin: 0 0 30px 0;
     }
 }
+

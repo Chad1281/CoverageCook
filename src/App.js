@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
-import './App.css';
+import $ from 'jquery';
+
 import Home from "./pages/Home";
 import Carriers from "./pages/Carriers";
 import Kitchen from "./pages/Landing/Kitchen/Kitchen";
@@ -8,6 +9,9 @@ import Footer from "./components/Footer";
 import ModalCard from "./components/ModalCard";
 import SaltEmbed from "./components/SaltEmbed";
 import ContactForm from "./components/ContactForm";
+import NewHeader from "./components/NewHeader/NewHeader";
+
+import './App.css';
 
 function App() {
 
@@ -20,16 +24,36 @@ function App() {
   // called to initially set the height.
   resetHeight();
 
+  function showQuoteForm() {
+    $("#saltEmbed").removeClass("hide");
+    showModal();
+}
+
+function showContactForm() {
+    $(".contact").removeClass("hide");
+    showModal();
+}
+
+function showModal() {
+    $(".modal").removeClass("hide");
+    $(".container").addClass("noScroll");
+}
+
   return (
     <Router>
       <div>        
         <ModalCard><SaltEmbed /><ContactForm /></ModalCard>
         <div className="container">
+          <NewHeader
+              quoteClick={() => showQuoteForm()}
+              contactClick={() => showContactForm()}
+          />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
+            <Route exact path="/insurance" component={Home} />
             <Route exact path="/carriers" component={Carriers} />
-            <Route exact path="/Insurance" component={Kitchen} />
+            <Route exact path="/insurance/kitchen" component={Kitchen} />
             <Redirect to="/" />
           </Switch>
           <Footer />

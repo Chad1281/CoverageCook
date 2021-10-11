@@ -20,7 +20,7 @@ export default function Jumbotron(props) {
                 handleClick={props.quoteClick} >
                 Get Quotes
             </QuoteBtn>     
-            <div className={props.custClass}>
+            <div className={`jumboContent ${props.custClass}`}>
                 {props.children}
             </div>
         </div>

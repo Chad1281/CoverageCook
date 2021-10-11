@@ -12,7 +12,6 @@ export default function Carriers() {
             <Header custClass="carrierHead" vidClass="hide" imgClass="headerImage" imgSrc={Insurance} imgAlt="Picture of downtown Austin and capital from South Congress above the Colorodo River">
                 <h2>Insurance Carriers</h2>
             </Header>
-            <Navbar />
             <div className="carriersContainer">
                 {CarriersLogos.map(function(card) {
                     let csN = "tel:"+card.csN;

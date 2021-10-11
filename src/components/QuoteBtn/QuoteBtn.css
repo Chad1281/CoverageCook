@@ -4,7 +4,7 @@
     margin: 15px 0 0 0;
     padding: 2px 15px 2px 15px;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 1;
 }
 
 button {
@@ -12,7 +12,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(120%);
+    filter: brightness(110%);
     transform: scale(1.1);
 }
 
