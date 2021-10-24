@@ -4,7 +4,7 @@ import './Spacer.css';
 
 export default function Spacer(props) {
     return(
-        <div className="spacer">
+        <div className={`spacer ${props.custClass}`}>
             {props.children}
         </div>
     )

@@ -1,9 +1,0 @@
-.header {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #7ac4ea;
-    z-index: 1;
-}

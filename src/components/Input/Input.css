@@ -1,0 +1,19 @@
+p { 
+    margin: 0 0 10px 0;
+}
+
+label {
+    min-width: 1500px;
+    margin: 15px 0 0 0;
+}
+
+.required {
+    color: red;
+    font-size: .8rem;
+}
+
+.optional {
+    margin-top: -5px;
+    color: #181f25;
+    font-size: .8rem;
+}

@@ -7,6 +7,7 @@ import './Jumbotron.css';
 export default function Jumbotron(props) {
     return(
         <div className="jumbotron">
+            <div className="jumboSpace" />
             <img 
                 className="jumboImg" 
                 src={ props.imgSrc } 

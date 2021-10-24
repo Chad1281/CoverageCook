@@ -1,14 +1,13 @@
 import React from 'react';
 import './input.css';
 
-const Input = props => {
-    const changeHandler = event => {};
+export default function Input(props) {
 
     const element =
         props.element === 'input' ? (
-            <input id={props.id} type={props.type} placeholder={props.placeholder} onChange={changeHandler} />
+            <input id={props.id} type={props.type} placeholder={props.placeholder} onChange={props.onChange} onClick={props.onSubmit} />
         ) : (
-            <textarea id={props.id} rows={props.rows || 3} onChange={changeHandler} /> 
+            <textarea id={props.id} rows={props.rows || 3} placeholder={props.placeholder} onChange={props.onChange} /> 
         );
 
     return (
@@ -19,4 +18,15 @@ const Input = props => {
     )
 }
 
-export default Input;
+export function Required() {
+    return (
+        <p className='required'>(Required)</p>
+    )
+}
+
+export function Optional() {
+    return (    
+        <p className='optional'>(Optional)</p>
+    )    
+}
+

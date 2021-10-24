@@ -1,6 +1,6 @@
 import React from "react";
 import $ from "jquery";
-import Firefly from "../../assets/images/fireflyWY.avif";
+import Firefly from "../../assets/images/logos/darkFirefly.avif";
 import Close from "../../assets/images/close.avif";
 import "./style.css";
 

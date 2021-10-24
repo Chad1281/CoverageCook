@@ -1,16 +1,13 @@
 import React from "react";
-import Header from "../../components/Header";
 import Card from "../../components/Card";
 import CarriersLogos from "../../assets/data/carrierLogos.js";
-import Insurance from "../../assets/images/other/insurance.avif";
 import "./style.css";
+import Spacer from "../../components/Spacer";
 
 export default function Carriers() {
     return(
         <div className="carriers">
-            <Header custClass="carrierHead" vidClass="hide" imgClass="headerImage" imgSrc={Insurance} imgAlt="Picture of downtown Austin and capital from South Congress above the Colorodo River">
-                <h2>Insurance Carriers</h2>
-            </Header>
+            <Spacer custClass="whiteBackground" />
             <div className="carriersContainer">
                 {CarriersLogos.map(function(card) {
                     let csN = "tel:"+card.csN;

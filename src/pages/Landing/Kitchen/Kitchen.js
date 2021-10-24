@@ -37,7 +37,7 @@ const Kitchen = () => {
                 <p>One Agent.</p>  
                 <p>No Endless Calls.</p> 
             </Jumbotron>
-            <Spacer />
+            <Spacer custClass='blackBackground' />
         </div>
     )
 }

@@ -12,7 +12,7 @@ button {
 }
 
 button:hover {
-    filter: brightness(110%);
+    filter: brightness(105%);
     transform: scale(1.1);
 }
 
@@ -25,4 +25,19 @@ button:hover {
 .grey {
     background-color: #626267;
     color: #f4f4f4;
+}
+
+.white {
+    background-color: #f4f4f4;
+    color: #181f25;
+}
+
+.blue {
+    background-color: #7ac4ea;
+    color: #181f25;
+}
+
+.yellow {
+    background-color: #f9dc2c;
+    color: #181f25;
 }

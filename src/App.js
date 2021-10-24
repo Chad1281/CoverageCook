@@ -12,25 +12,27 @@ import NewHeader from "./components/NewHeader/NewHeader";
 import './App.css';
 
 const SaltEmbed = React.lazy(() => import('./components/SaltEmbed'));
-const ContactForm = React.lazy(() => import('./components/ContactForm'));
+const ContactForm = React.lazy(() => import('./components/ContactForm/contact'));
 
 function App() {
 
-  function resetHeight(){
-    // reset the body height to that of the inner browser
-    document.body.style.height = window.innerHeight + "px";
-  }
-  // reset the height whenever the window's resized
-  window.addEventListener("resize", resetHeight);
-  // called to initially set the height.
-  resetHeight();
+  // function resetHeight(){
+  //   // reset the body height to that of the inner browser
+  //   document.body.style.height = window.innerHeight + "px";
+  // }
+  // // reset the height whenever the window's resized
+  // window.addEventListener("resize", resetHeight);
+  // // called to initially set the height.
+  // resetHeight();
 
-  function showQuoteForm() {
+  function showQuoteForm(e) {
+    e.preventDefault();
     $("#saltEmbed").removeClass("hide");
     showModal();
   }
 
-  function showContactForm() {
+  function showContactForm(e) {
+    e.preventDefault();
     $(".contact").removeClass("hide");
     showModal();
   }
@@ -51,8 +53,8 @@ function App() {
         </ModalCard>
         <div className="container">
           <NewHeader
-              quoteClick={() => showQuoteForm()}
-              contactClick={() => showContactForm()}
+              quoteClick={(e) => showQuoteForm(e)}
+              contactClick={(e) => showContactForm(e)}
           />
           <Switch>
             <Route exact path="/" component={Home} />

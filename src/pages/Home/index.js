@@ -40,7 +40,7 @@ const Home = () => {
                 <p>One Agent.</p>  
                 <p>No Endless Calls.</p> 
             </Jumbotron>
-            <Spacer>
+            <Spacer custClass="blackBackground whiteTxt">
                 <div>
                     <p>"My special cause, the one that alerts my interest and quickens the pace of my life, is to preserve the wildflowers and native plants that define the regions of our land-to encourage and promote their use in appropriate areas, and thus help pass on to generation in waiting the quiet jobs and satisfactions I have known since my childhood." ~ Lady Bird Johnson</p>
                     <p>CoverageCook.com is a Firefly Insurance Agency located in the Texas Hill Country amongst some of the most beautiful wildflowers and countrysides in the world. We strive to give you the best possible insurance shopping experience while making the process easy and hassle free. We'll shop your auto and home insurance for you and customize your coverage to find you the best possible price.</p>
@@ -70,7 +70,7 @@ const Home = () => {
                     <img id="nerd" src={NerdyKid} alt="nerdy kid wondering" />
                 </div>                
             </div>
-            <Spacer />   
+            <Spacer custClass="blackBackground" />   
         </div>
     )
 }
