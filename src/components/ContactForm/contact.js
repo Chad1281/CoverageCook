@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import $ from 'jquery';
 
 import Input, { Required, Optional } from "../Input/input";
 import { addDoc, collection } from "firebase/firestore/lite"; 
@@ -42,6 +43,9 @@ export default function ContactRequest() {
             } catch (e) {
             console.error("Error adding document: ", e);
             }
+            $("#contactForm").addClass("hide");
+            $("#sent").removeClass("hide");
+            setTimeout(function(){ window.location.reload(); $("#contactFrom").removeClass("hide"); $("#sent").addClass("hide") }, 5000);
         }
     }
 
@@ -61,18 +65,21 @@ export default function ContactRequest() {
                     </a>
                 </div> 
             </div>
-            <h2>Send Message</h2>
-            <form onSubmit={handleFormSubmit}> 
-                <Input element="input" id="fname" type="text" placeholder="Full Name" onChange={handleInputChange} />
-                <Required />
-                <Input element="input" id="email" type="text" placeholder="Email Address" onChange={handleInputChange} />
-                <Required />
-                <Input element='input' id='phone' type='tel' placeholder='Phone Number' onChange={handleInputChange} />
-                <Required />
-                <Input element='textarea' id='comment' placeholder='Comments or Feedback' onChange={handleInputChange} />
-                <Optional />
-                <button className='white' id='submit' type='submit' disabled={!(contactForm.fname && contactForm.email && contactForm.phone)}>Submit</button>
-            </form>
+            <div id="contactForm">
+                <h2>Send Message</h2>
+                <form onSubmit={handleFormSubmit}> 
+                    <Input element="input" id="fname" type="text" placeholder="Full Name" onChange={handleInputChange} />
+                    <Required />
+                    <Input element="input" id="email" type="text" placeholder="Email Address" onChange={handleInputChange} />
+                    <Required />
+                    <Input element='input' id='phone' type='tel' placeholder='Phone Number' onChange={handleInputChange} />
+                    <Required />
+                    <Input element='textarea' id='comment' placeholder='Comments or Feedback' onChange={handleInputChange} />
+                    <Optional />
+                    <button className='white' id='submit' type='submit' disabled={!(contactForm.fname && contactForm.email && contactForm.phone)}>Submit</button>
+                </form>
+            </div>
+            <p id="sent" className="hide">Your request was sent successfully!</p>
         </div>
     )
 }

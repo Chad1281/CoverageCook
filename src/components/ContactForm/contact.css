@@ -108,6 +108,9 @@
     resize: none;
 }
 
-.hide {
-    display: none;
+#sent {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 120px 15px;
 }
