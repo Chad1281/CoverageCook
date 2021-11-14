@@ -11,7 +11,7 @@
 .contactCard {
     display: flex;
     width: 100%;
-    border-bottom: 3px solid #181f25;
+    /* border-bottom: 3px solid #181f25; */
 }
 
 .contactCard div {
@@ -31,14 +31,18 @@
 
 #contactPhone {
     display: flex;
-    background-color: #f9dc2c;
-    border-right: 3px solid #181f25;
+    background-color: #f9de2c;
+    border: 4px outset #ccb623;
+    /* border-right: 3px solid #181f25;
+    border-bottom: 3px solid #181f25; */
     text-align: center;
 }
 
 #contactEmail {
     display: flex;
-    background-color: #7ac4ea;
+    background-color: #7ac5ea;
+    border: 4px outset #609ab8;
+    /* border-bottom: 3px solid #181f25; */
     text-align: center;
 }
 

@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 
 import Input, { Required, Optional } from "../Input/input";
+import { addDoc, collection } from "firebase/firestore/lite"; 
+import db from '../../firebase';
+
 
 import "./contact.css";
 
 export default function ContactRequest() {
+
     
     const [contactForm, setContactForm] = useState({})
 
@@ -13,10 +17,31 @@ export default function ContactRequest() {
         setContactForm({...contactForm, [id]: value})
     }
 
-    function handleFormSubmit(event) {
+    
+
+    const handleFormSubmit = async (event) => {
+
         event.preventDefault();
+
         if (contactForm.fname && contactForm.email && contactForm.phone) {
-            console.log(contactForm.comment)
+            console.log(contactForm.fname)
+
+            try {
+            const docRef = await addDoc(collection(db, "mail"), {
+                to: 'ccook@fireflyagency.com',
+                message: {
+                  subject: 'Contact Request',
+                  html: `Name: ${contactForm.fname}<br />
+                  Email: ${contactForm.email}<br />
+                  Phone: ${contactForm.phone}<br />
+                  Comment: ${contactForm.comment}`
+                }
+            });
+
+            console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+            console.error("Error adding document: ", e);
+            }
         }
     }
 
@@ -25,7 +50,7 @@ export default function ContactRequest() {
             <div className='contactCard'>
                 <div id='contactPhone'>
                     <a href='tel:512-312-7360' title='Office Number'>
-                        <p>Call Chad Cook</p>
+                        <p>Call</p>
                         <p>512-312-7360</p>
                     </a>
                 </div> 
@@ -46,7 +71,7 @@ export default function ContactRequest() {
                 <Required />
                 <Input element='textarea' id='comment' placeholder='Comments or Feedback' onChange={handleInputChange} />
                 <Optional />
-                <button className='white' id='submit' type='submit'>Submit</button>
+                <button className='white' id='submit' type='submit' disabled={!(contactForm.fname && contactForm.email && contactForm.phone)}>Submit</button>
             </form>
         </div>
     )
